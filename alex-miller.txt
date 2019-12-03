@@ -117,13 +117,42 @@ CodePen Project 2:
     35. How often should I commit to github?
     As often as possible.
 
-    36. What is the command we would use to push our repo up to github? 
-    37. Walk me through Lambda's git flow. 
+    36. What is the command we would use to push our repo up to github?
+    git push -u origin 'branch-name'
+
+    37. Walk me through Lambda's git flow.
+    1. Fork project
+    2. Add TL/PM as a collaborators
+    3. Clone the forked project to your computer
+    4. Branch to your name. git checkout -b 'first-last'
+    (Check git status throughout)
+    5. *Work on project*
+    6. git add .
+    7. git commit -m 'update message'
+    8. git push -u origin 'branch-name' to publish to github
+    9. Pull Request to YOUR forked project on GitHub
+    10. Include TL/PM as reviewer of Pull request
+    11. TL/PM accepts project if complete
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    Block elements create a new 'block' and split up segments. (Such as <p>) Inline blocks
+    can be used within block elements without dividing into segments. (Such as <span>, <a>, <strong>)
+
+    2. What happens when an element is positioned absolutely?
+    Absolute positioning confines the element to it's own layer and will not interfere with the other
+    elements within the document.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+    By using the display:block element. It starts on a new line and takes up the whole space, but allows customization
+    of the width.
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display
+    inline-block by default
+    3 block: <p> <h1> <address> | 2 inline: <span> <strong> | 1 inline-block: <nav>
+
     5. In your own words, explain the box model. What is the fix for the box model?
+    The box model is the 'box' or variable space that surrounds all elements in HTML. They are layered inside out starting from
+    content>padding>border>margin. A fix for the box model can be done in CSS using box-sizing:border-box that will become much
+    more supported by most browsers by including the padding and border within the content width.
