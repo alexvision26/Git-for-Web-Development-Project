@@ -28,10 +28,27 @@ You will need to follow the Lambda School Git Workflow to add a file to this pro
 ## Stretch
 Stretch Review questions: 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
-    5. In your own words, explain the box model. What is the fix for the box model? 
+    Block elements create a new 'block' and split up segments. (Such as <p>) Inline blocks
+    can be used within block elements without dividing into segments. (Such as <span>, <a>, <strong>)
+
+    2. What happens when an element is positioned absolutely?
+    Absolute positioning confines the element to it's own layer and will not interfere with the other
+    elements within the document.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+    By using the display:block element. It starts on a new line and takes up the whole space, but allows customization
+    of the width.
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display
+    inline-block by default
+    3 block: <p> <h1> <address> | 2 inline: <span> <strong> | 1 inline-block: <nav>
+
+    5. In your own words, explain the box model. What is the fix for the box model?
+    The box model is the 'box' or variable space that surrounds all elements in HTML. They are layered inside out starting from
+    content>padding>border>margin. A fix for the box model can be done in CSS using box-sizing:border-box that will become much
+    more supported by most browsers by including the padding and border within the content width.
+
+
 Stretch Git Tasks
 - [ ] While the processes learned here will set you up to be successful in most situations, they are just the tip of the iceberg in learning Git. Independently research the following topics to learn more about Git.
   - [ ] Research and understand what a `merge conflict` is and how to resolve it.
