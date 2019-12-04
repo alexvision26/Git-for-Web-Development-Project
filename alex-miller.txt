@@ -95,7 +95,7 @@ CodePen Project: https://codepen.io/alexvision26/pen/Bayypzv
     div{border: 1px dotted black;}
 
     29. How do I select everything on the page? 
-    html{//styling properties}
+    * {//styling properties}
 
     30. How do I write a comment in CSS?
     /*comment*/
@@ -107,7 +107,8 @@ CodePen Project: https://codepen.io/alexvision26/pen/Bayypzv
     ls 
 
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
-    del *filename*
+    rm *filename* We must be careful with this because you cannot retrieve what has between
+    deleted using the 'rm' command. It does not go to the trash bin, it's gone forever.
 
     34. Why should I use version control?
     To save you progress and so you can any collaborators can see what changes are made to a
